@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CityCare Clinic</title>
+    <link rel="stylesheet" href="city-clinic.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="nav">
+        <div class="logo">CityCare Clinic</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#team">Team</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a class="btn" href="#contact">Book Visit</a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Comprehensive Care Tailored to You</h1>
+                <p>Our multidisciplinary experts combine precision diagnostics with compassionate treatment plans for every stage of wellness.</p>
+                <div class="hero-actions">
+                    <a class="btn primary" href="#services">Explore Services</a>
+                    <a class="btn ghost" href="#contact">Request Appointment</a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <h2>Same-Day Visits</h2>
+                <p>Limited slots available this week for primary care and specialist consultations.</p>
+                <ul>
+                    <li>Board-certified physicians</li>
+                    <li>On-site diagnostics</li>
+                    <li>Virtual follow-ups</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="stat">
+                <span>35+</span>
+                <p>years delivering patient-centered care across the city.</p>
+            </div>
+            <div class="about-content">
+                <h2>Preventive, Personalized, Proactive</h2>
+                <p>CityCare Clinic reimagines the primary care experience with serene spaces, advanced screening technology, and a team committed to seeing the whole you. From annual physicals to chronic care management, we partner with you on every health milestone.</p>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <h2>Our Specialties</h2>
+            <div class="grid">
+                <article>
+                    <h3>Preventive Care</h3>
+                    <p>Annual exams, vaccinations, and lifestyle coaching to keep you ahead of potential concerns.</p>
+                </article>
+                <article>
+                    <h3>Women's Health</h3>
+                    <p>Comprehensive gynecological services, fertility guidance, and prenatal monitoring.</p>
+                </article>
+                <article>
+                    <h3>Cardiology</h3>
+                    <p>In-depth heart assessments with remote monitoring and individualized recovery pathways.</p>
+                </article>
+                <article>
+                    <h3>Telehealth</h3>
+                    <p>Secure virtual visits with your care team, including follow-up care and lab result reviews.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="team" class="team">
+            <h2>Meet Your Care Team</h2>
+            <div class="grid">
+                <article>
+                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=400&q=80" alt="Portrait of Dr. Maya Chen">
+                    <h3>Dr. Maya Chen</h3>
+                    <p>Integrative Medicine Director focused on preventive care and lifestyle medicine.</p>
+                </article>
+                <article>
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=400&q=80" alt="Portrait of Dr. Liam Patel">
+                    <h3>Dr. Liam Patel</h3>
+                    <p>Cardiologist specializing in diagnostic imaging and personalized recovery plans.</p>
+                </article>
+                <article>
+                    <img src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&w=400&q=80" alt="Portrait of Nurse Olivia Cruz">
+                    <h3>Olivia Cruz, RN</h3>
+                    <p>Lead nurse navigator guiding patients through every stage of care.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>Trusted by Thousands</h2>
+            <div class="quotes">
+                <blockquote>
+                    “Every appointment feels collaborative. The team listens and explains each step clearly.”
+                    <cite>— Jordan P.</cite>
+                </blockquote>
+                <blockquote>
+                    “Their follow-up care and digital access make managing my health effortless.”
+                    <cite>— Casey L.</cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div>
+                <h2>Schedule a Visit</h2>
+                <p>Call us at <a href="tel:+15551234567">(555) 123-4567</a> or request an appointment using the form.</p>
+                <p>123 Wellness Ave, Suite 400 · Downtown</p>
+            </div>
+            <form>
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Full name">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Email address">
+                <label for="service">Service</label>
+                <select id="service">
+                    <option>Preventive Care</option>
+                    <option>Women's Health</option>
+                    <option>Cardiology</option>
+                    <option>Telehealth</option>
+                </select>
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" placeholder="How can we help?"></textarea>
+                <button type="submit">Submit Request</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 CityCare Clinic. All rights reserved.</p>
+    </footer>
+</body>
+</html>

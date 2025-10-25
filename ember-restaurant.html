@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ember & Sage</title>
+    <link rel="stylesheet" href="ember-restaurant.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="nav">
+        <div class="brand">Ember & Sage</div>
+        <nav>
+            <a href="#menu">Menu</a>
+            <a href="#story">Story</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#visit">Visit</a>
+        </nav>
+        <a class="btn" href="#reserve">Reserve</a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="overlay"></div>
+            <div class="content">
+                <h1>Seasonal Fire-Crafted Dining</h1>
+                <p>Wood-fired cuisine inspired by regenerative farms and coastal flavors. Taste the rhythm of the seasons in every plate.</p>
+                <div class="actions">
+                    <a class="btn primary" href="#menu">Explore Menu</a>
+                    <a class="btn outline" href="#gallery">View Atmosphere</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="menu">
+            <div class="intro">
+                <h2>Tonight's Signatures</h2>
+                <p>A rotating selection of smoke-kissed dishes and inventive cocktails curated by Chef Lena Ortiz.</p>
+            </div>
+            <div class="grid">
+                <article>
+                    <h3>Fire-Roasted Halibut</h3>
+                    <p>Charred fennel, preserved lemon beurre blanc, smoked mussel aioli.</p>
+                    <span>$36</span>
+                </article>
+                <article>
+                    <h3>Ember Charred Carrots</h3>
+                    <p>Black garlic tahini, pistachio crumble, pickled currants.</p>
+                    <span>$14</span>
+                </article>
+                <article>
+                    <h3>Ash Barrel Ribeye</h3>
+                    <p>Rosemary butter, embered cipollini, bone marrow bordelaise.</p>
+                    <span>$52</span>
+                </article>
+                <article>
+                    <h3>Smoked Pear Negroni</h3>
+                    <p>Infused gin, charred vermouth, toasted sage bitters.</p>
+                    <span>$16</span>
+                </article>
+            </div>
+        </section>
+
+        <section id="story" class="story">
+            <div class="text">
+                <h2>From Flame to Table</h2>
+                <p>Ember & Sage is a celebration of the balance between fire and delicacy. Our open kitchen anchors the dining room, while reclaimed oak and molten bronze details set an intimate glow. Every course echoes our commitment to biodynamic sourcing and zero-waste cooking.</p>
+                <p>Chef Lena partners with nearby growers and fishermen, crafting nightly menus that highlight the peak of each harvest. Step inside, and savor the warmth.</p>
+            </div>
+            <div class="details">
+                <div class="card">
+                    <span>⏤ Since 2018</span>
+                    <h3>Michelin Guide Recommended</h3>
+                </div>
+                <div class="card">
+                    <span>⏤ Culinary Team</span>
+                    <h3>Open-Fire Kitchen Residency</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Plated seasonal dish">
+            <img src="https://images.unsplash.com/photo-1528696892704-5e1122852276?auto=format&fit=crop&w=600&q=80" alt="Wood-fired kitchen interior">
+            <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=600&q=80" alt="Restaurant bar with glowing lights">
+        </section>
+
+        <section id="reserve" class="reserve">
+            <div class="panel">
+                <h2>Reserve Your Table</h2>
+                <p>We welcome walk-ins at the bar, with limited dining reservations released two weeks in advance. For parties of 6+, contact our concierge.</p>
+                <form>
+                    <label for="date">Date</label>
+                    <input id="date" type="date">
+                    <label for="time">Time</label>
+                    <input id="time" type="time">
+                    <label for="party">Party Size</label>
+                    <select id="party">
+                        <option>2 Guests</option>
+                        <option>3 Guests</option>
+                        <option>4 Guests</option>
+                        <option>5 Guests</option>
+                        <option>6 Guests</option>
+                    </select>
+                    <button type="submit">Request Reservation</button>
+                </form>
+            </div>
+            <div class="note">
+                <h3>Chef's Counter</h3>
+                <p>For a front-row view of the flames, join our twelve-seat counter experience with a seven-course tasting menu.</p>
+            </div>
+        </section>
+
+        <section id="visit" class="visit">
+            <div>
+                <h2>Plan Your Evening</h2>
+                <p>315 Charcoal Lane · Warehouse District · Tues–Sat · 5pm–11pm</p>
+            </div>
+            <div class="links">
+                <a href="tel:+15557654321">Call (555) 765-4321</a>
+                <a href="mailto:concierge@emberandsage.com">Email Concierge</a>
+                <a href="#">Gift Experiences</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Ember & Sage. Crafted with fire and heart.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulse Interval Studio</title>
+    <link rel="stylesheet" href="pulse-fitness.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="nav">
+        <div class="logo">Pulse Interval</div>
+        <nav>
+            <a href="#programs">Programs</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#coaches">Coaches</a>
+            <a href="#join">Join</a>
+        </nav>
+        <a class="btn" href="#join">Start Free Trial</a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-copy">
+                <h1>High-Intensity Training Reinvented with Real-Time Biometrics</h1>
+                <p>Immersive HIIT sessions calibrated to your heart rate zones, synced lighting, and dynamic playlists built for max performance.</p>
+                <div class="badges">
+                    <span>Wearable Integration</span>
+                    <span>Infrared Recovery</span>
+                    <span>Performance Analytics</span>
+                </div>
+                <div class="actions">
+                    <a class="btn primary" href="#schedule">See Schedule</a>
+                    <a class="btn outline" href="#programs">Watch Preview</a>
+                </div>
+            </div>
+            <div class="hero-panel">
+                <h3>Live Metrics</h3>
+                <div class="metrics">
+                    <div>
+                        <span>Zone 4</span>
+                        <p>Heart Rate</p>
+                    </div>
+                    <div>
+                        <span>178</span>
+                        <p>Calories Burned</p>
+                    </div>
+                    <div>
+                        <span>02:15</span>
+                        <p>Interval Remaining</p>
+                    </div>
+                </div>
+                <p class="note">Every class streams performance data to your phone for post-session analysis.</p>
+            </div>
+        </section>
+
+        <section id="programs" class="programs">
+            <h2>Signature Training Tracks</h2>
+            <div class="grid">
+                <article>
+                    <h3>Pulse 45</h3>
+                    <p>Compact HIIT protocol alternating strength, power, and endurance sprints.</p>
+                    <span>45 Minutes · Intermediate</span>
+                </article>
+                <article>
+                    <h3>Amplify</h3>
+                    <p>Strength-forward programming with tempo lifts, sled work, and metabolic finishers.</p>
+                    <span>60 Minutes · Advanced</span>
+                </article>
+                <article>
+                    <h3>Flow Reset</h3>
+                    <p>Low-impact conditioning blending mobility, reformer-inspired core, and breathwork.</p>
+                    <span>50 Minutes · All Levels</span>
+                </article>
+                <article>
+                    <h3>Hybrid Ride</h3>
+                    <p>Immersive cycling paired with off-bike resistance to amplify VO₂ max gains.</p>
+                    <span>55 Minutes · Intermediate</span>
+                </article>
+            </div>
+        </section>
+
+        <section id="schedule" class="schedule">
+            <div class="head">
+                <h2>Tomorrow's Studio Lineup</h2>
+                <p>Select your preferred slot and reserve in the app or at the desk.</p>
+            </div>
+            <div class="slots">
+                <article>
+                    <span>6:00 AM</span>
+                    <h3>Pulse 45</h3>
+                    <p>Coach Ellis · 3 bikes left</p>
+                    <button>Reserve</button>
+                </article>
+                <article>
+                    <span>7:30 AM</span>
+                    <h3>Hybrid Ride</h3>
+                    <p>Coach Maya · 5 spots open</p>
+                    <button>Reserve</button>
+                </article>
+                <article>
+                    <span>12:00 PM</span>
+                    <h3>Flow Reset</h3>
+                    <p>Coach Jules · 2 mats left</p>
+                    <button>Reserve</button>
+                </article>
+                <article>
+                    <span>6:30 PM</span>
+                    <h3>Amplify</h3>
+                    <p>Coach Tomas · Waitlist available</p>
+                    <button>Join Waitlist</button>
+                </article>
+            </div>
+        </section>
+
+        <section id="coaches" class="coaches">
+            <h2>Coaching Collective</h2>
+            <div class="carousel">
+                <article>
+                    <img src="https://images.unsplash.com/photo-1517832207067-4db24a2ae47c?auto=format&fit=crop&w=400&q=80" alt="Coach Ellis">
+                    <h3>Ellis Navarro</h3>
+                    <p>Strength coach and performance tech lead, specializing in power output optimization.</p>
+                </article>
+                <article>
+                    <img src="https://images.unsplash.com/photo-1541532713592-79a0317b6b77?auto=format&fit=crop&w=400&q=80" alt="Coach Maya">
+                    <h3>Maya Chen</h3>
+                    <p>Cycling strategist crafting immersive playlists synced to lighting zones.</p>
+                </article>
+                <article>
+                    <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?auto=format&fit=crop&w=400&q=80" alt="Coach Jules">
+                    <h3>Jules Ortega</h3>
+                    <p>Mobility expert bringing pilates-informed sequences to calm the nervous system.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="join" class="join">
+            <div class="plan">
+                <h2>Membership Designed for Momentum</h2>
+                <p>Unlimited studio access, sensor rentals, and exclusive recovery lounge sessions.</p>
+                <ul>
+                    <li>Monthly performance reviews with your coach</li>
+                    <li>Complimentary cold plunge + infrared therapy</li>
+                    <li>Priority booking window and guest passes</li>
+                </ul>
+            </div>
+            <form>
+                <label for="full-name">Name</label>
+                <input id="full-name" type="text" placeholder="Full name">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Email address">
+                <label for="goal">Primary Goal</label>
+                <select id="goal">
+                    <option>Strength & Power</option>
+                    <option>Endurance</option>
+                    <option>Reset & Mobility</option>
+                    <option>Performance Tracking</option>
+                </select>
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" placeholder="Tell us about your training focus"></textarea>
+                <button type="submit">Start 7-Day Trial</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Pulse Interval Studio · 480 Mission St · Membership Support (555) 321-9087</p>
+    </footer>
+</body>
+</html>

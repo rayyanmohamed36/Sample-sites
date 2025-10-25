@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Atelier Salon</title>
+    <link rel="stylesheet" href="luxe-salon.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="nav">
+        <div class="mark">Luxe Atelier</div>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#lookbook">Lookbook</a>
+            <a href="#artists">Artists</a>
+            <a href="#book">Book</a>
+        </nav>
+        <a class="btn" href="#book">Book Session</a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <span class="tag">Sculpted Beauty Studio</span>
+                <h1>Hair Architecture for the Modern Muse</h1>
+                <p>Precision color, bespoke cuts, and editorial styling in an intimate salon sanctuary.</p>
+                <div class="hero-actions">
+                    <a class="btn filled" href="#services">View Services</a>
+                    <a class="btn subtle" href="#lookbook">See Transformations</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=550&q=80" alt="Model with styled hair">
+                <div class="card">
+                    <h3>Signature Balayage</h3>
+                    <p>Seamless sweeps of light for sun-kissed dimension in under three hours.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <h2>Studio Offerings</h2>
+            <div class="grid">
+                <article>
+                    <h3>Cut & Design</h3>
+                    <p>Architectural cuts with structural blowouts tailored to your unique texture and movement.</p>
+                    <span>From $145</span>
+                </article>
+                <article>
+                    <h3>Color Lab</h3>
+                    <p>Studio balayage, foil artistry, and toning rituals with ammonia-free color systems.</p>
+                    <span>From $195</span>
+                </article>
+                <article>
+                    <h3>Texture Suite</h3>
+                    <p>Keratin smoothing, digital perms, and curl revivals with bond-building treatments.</p>
+                    <span>From $210</span>
+                </article>
+                <article>
+                    <h3>Editorial Styling</h3>
+                    <p>Runway-ready updos, sleek ponytails, and on-set styling for campaigns and events.</p>
+                    <span>From $120</span>
+                </article>
+            </div>
+        </section>
+
+        <section id="lookbook" class="lookbook">
+            <div class="intro">
+                <h2>Lookbook</h2>
+                <p>Captured in natural light, each transformation highlights the artistry of tone, form, and finish.</p>
+            </div>
+            <div class="gallery">
+                <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=500&q=80" alt="Soft brunette waves">
+                <img src="https://images.unsplash.com/photo-1519748771451-a94c596fad67?auto=format&fit=crop&w=500&q=80" alt="Blonde bob haircut">
+                <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?auto=format&fit=crop&w=500&q=80" alt="Redhead curls">
+                <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=500&q=80" alt="Elegant updo">
+            </div>
+        </section>
+
+        <section id="artists" class="artists">
+            <h2>The Collective</h2>
+            <div class="profiles">
+                <article>
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=400&q=80" alt="Creative director Ava">
+                    <div>
+                        <h3>Ava Laurent</h3>
+                        <span>Creative Director</span>
+                        <p>Paris-trained stylist crafting elevated cuts and tailored style journeys.</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=400&q=80" alt="Color specialist Rio">
+                    <div>
+                        <h3>Rio Chen</h3>
+                        <span>Color Alchemist</span>
+                        <p>Known for luminous blonding and sculpted color placement with lived-in finish.</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80" alt="Stylist Noa">
+                    <div>
+                        <h3>Noa Sterling</h3>
+                        <span>Texture Specialist</span>
+                        <p>Empowering curls and coils through moisture-rich, bond-repair treatments.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="book" class="book">
+            <div class="copy">
+                <h2>Reserve Your Session</h2>
+                <p>Weekday availability with priority scheduling for Atelier Members. All new guests begin with a consultation to map hair goals.</p>
+                <p class="phone"><a href="tel:+15559871234">Call (555) 987-1234</a> · 28 Mercer St · Soho</p>
+            </div>
+            <form>
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Full name">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Email address">
+                <label for="service">Service</label>
+                <select id="service">
+                    <option>Cut & Design</option>
+                    <option>Color Lab</option>
+                    <option>Texture Suite</option>
+                    <option>Editorial Styling</option>
+                </select>
+                <label for="notes">Notes</label>
+                <textarea id="notes" rows="4" placeholder="Share inspiration or timing preferences"></textarea>
+                <button type="submit">Request Booking</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Luxe Atelier Salon. Crafted by artists, tailored for you.</p>
+    </footer>
+</body>
+</html>
