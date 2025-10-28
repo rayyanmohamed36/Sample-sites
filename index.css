@@ -59,6 +59,10 @@ body {
     color: var(--accent);
 }
 
+.nav .btn {
+    color: #ffffff;
+}
+
 .btn {
     display: inline-flex;
     align-items: center;
