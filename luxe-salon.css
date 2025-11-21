@@ -342,6 +342,34 @@ footer {
     color: var(--muted);
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: var(--text);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
 @media (max-width: 900px) {
     .hero-visual .card {
         position: static;
@@ -352,13 +380,39 @@ footer {
 @media (max-width: 768px) {
     .nav {
         flex-wrap: wrap;
-        gap: 1rem;
+    }
+
+    .hamburger {
+        display: flex;
+        order: 3;
+    }
+
+    .mark {
+        order: 1;
+    }
+
+    .nav .btn {
+        order: 2;
     }
 
     .nav nav {
+        display: none;
         width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 0;
+        order: 4;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid rgba(143, 84, 222, 0.2);
+    }
+
+    .nav nav.active {
+        display: flex;
+    }
+
+    .nav nav a {
+        padding: 0.75rem 0;
+        text-align: center;
     }
 
     main {
