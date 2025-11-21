@@ -192,9 +192,31 @@ main {
 }
 
 .collection .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    display: flex;
     gap: 1.75rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 1rem;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) var(--surface);
+}
+
+.collection .grid::-webkit-scrollbar {
+    height: 8px;
+}
+
+.collection .grid::-webkit-scrollbar-track {
+    background: var(--surface);
+    border-radius: 4px;
+}
+
+.collection .grid::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 4px;
+}
+
+.collection .grid::-webkit-scrollbar-thumb:hover {
+    background: #1f4fa8;
 }
 
 .card {
@@ -208,6 +230,8 @@ main {
     background: var(--surface);
     box-shadow: 0 16px 38px rgba(28, 35, 51, 0.06);
     transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    min-width: 300px;
+    flex-shrink: 0;
 }
 
 .card:hover {
