@@ -253,6 +253,10 @@ main {
     border-top: 3px solid #4b58ff;
 }
 
+.card.showcase {
+    border-top: 3px solid #00d9ff;
+}
+
 .about {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
